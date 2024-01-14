@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Maax Mono";
+    src: url("/src/assets/fonts/maaxmono/MaaxMono_Regular.otf");
+    font-style: normal;
+}
+
+$primary: black;
+$secondary: white;
+$accent: #eeff2f;
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Maax Mono";
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.a-no-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.webcam-wrapper {
+    video {
+        object-fit: cover;
+        width: 100vw;
+        height: 84vh;
+    }
+}

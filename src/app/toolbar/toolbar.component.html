@@ -1,0 +1,23 @@
+<div class="toolbar">
+    <div class="toolbar__container">
+        <div class="toolbar__container__left">
+            <a routerLink="/menu">menu</a>
+        </div>
+        <div class="toolbar__container__center">
+            <button *ngIf="!captureActive" (click)="redirectToCapture()" class="capture-btn">
+                <img src="../../assets/img/eye.svg" alt="" srcset="">
+            </button>
+
+            <button *ngIf="captureActive" (click)="capturePhoto()" class="capture-btn active">
+                <img src="../../assets/img/eye.svg" alt="" srcset="">
+            </button>
+
+            <button *ngIf="ingredientsActive" (click)="generateRecipes()" class="capture-btn generate">
+                <img src="../../assets/img/circle.svg" alt="" srcset="">
+            </button>
+        </div>
+        <div class="toolbar__container__right">
+            <a routerLink="/history">history</a>
+        </div>
+    </div>
+</div>

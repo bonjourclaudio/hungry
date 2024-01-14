@@ -1,0 +1,11 @@
+<div *ngIf="recipes.length >= 1; else noRecipe">
+    <ul>
+        <li *ngFor="let recipe of recipes">
+            {{ recipe.name }}
+        </li>
+    </ul>
+</div>
+
+<ng-template #noRecipe>
+    No Recipes found
+</ng-template>

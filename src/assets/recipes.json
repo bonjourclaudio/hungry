@@ -1,0 +1,62 @@
+{
+    "recipes": [
+        {
+            "name": "Bruschetta",
+            "ingredients": [
+                {
+                    "name": "tomato",
+                    "required": true,
+                    "aliases": [
+                        "tomato",
+                        "cherry tomatoes",
+                        "bush tomato",
+                        "plum tomato"
+                    ]
+                },
+                {
+                    "name": "bread",
+                    "required": true,
+                    "aliases": [
+                        "loaf",
+                        "sourdough",
+                        "bread"
+                    ]
+                },
+                {
+                    "name": "salt",
+                    "required": false
+                },
+                {
+                    "name": "pepper",
+                    "required": false
+                },
+                {
+                    "name": "olive oil",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "Gift",
+            "ingredients": [
+                {
+                    "name": "tomato",
+                    "required": true,
+                    "aliases": [
+                        "tomato",
+                        "cherry tomatoes",
+                        "bush tomato",
+                        "plum tomato"
+                    ]
+                },
+                {
+                    "name": "flower",
+                    "required": true,
+                    "aliases": [
+                        "flower"
+                    ]
+                }
+            ]
+        }
+    ]
+}

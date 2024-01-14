@@ -1,0 +1,25 @@
+.nav {
+    width: 100vw;
+    height: 6vh;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 90%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+
+        &__logo {
+            width: 20%;
+
+            a {
+                font-size: 1.5rem;
+                font-style: italic;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let ingredient of ingredients">
+        <span>{{ ingredient }}</span>
+    </li>
+</ul>
+
+<input #ingredientInput id="ingredientInput" type="text" placeholder="Add ingredient">
+<button (click)="addIngredient(ingredientInput.value); ingredientInput.value = ''">Add</button>

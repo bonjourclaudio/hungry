@@ -1,0 +1,69 @@
+.toolbar {
+    width: 100vw;
+    height: 10vh;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 90%;
+        height: 100%;
+
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__left {
+        }
+
+        &__center {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__right {
+        }
+    }
+}
+
+.capture-btn {
+    position: absolute;
+    top: -0.7vh;
+
+    background-color: white;
+
+    height: 7vh;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+    img {
+        width: 100%;
+    }
+
+    &.active {
+        background-color: #c7ff90;
+        border-style: dashed;
+    }
+
+    &.generate {
+        background-color: #a5a9ff;
+
+        img {
+            width: 80%;
+        }
+    }
+}

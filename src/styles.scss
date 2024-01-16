@@ -21,6 +21,9 @@ $accent: #eeff2f;
 body {
     font-family: "Maax Mono";
     background-color: $secondary;
+
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 h2 {

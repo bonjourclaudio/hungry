@@ -1,15 +1,27 @@
 <div class="ingredients-title">
-    <h2>your ingredients:</h2>
+    <div>
+        <h2>your ingredients:</h2>
+    </div>
 </div>
 
 <ul class="ingredients-container">
     <li class="ingredients-el" *ngFor="let ingredient of ingredients">
-        <input type="checkbox" name="" id="" checked="checked">
-        <span>{{ ingredient }}</span>
+        <div class="ingredients-el__content">
+            <div>
+                <input type="checkbox" name="" id="" checked="checked">
+                <span>{{ ingredient }}</span>
+            </div>
+        </div>
+
     </li>
 </ul>
 
 <div class="ingredients-action">
-    <input #ingredientInput id="ingredientInput" type="text" placeholder="Add ingredient">
-    <button (click)="addIngredient(ingredientInput.value); ingredientInput.value = ''">Add</button>
+    <div>
+        <input (keydown.enter)="addIngredient(ingredientInput.value); ingredientInput.value = ''" #ingredientInput
+            id="ingredientInput" type="text" placeholder="Add ingredient">
+        <button (click)="addIngredient(ingredientInput.value); ingredientInput.value = ''">
+            <img src="../../assets/img/plus.svg" alt="">
+        </button>
+    </div>
 </div>

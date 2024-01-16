@@ -14,6 +14,10 @@ $accent: #eeff2f;
     scroll-behavior: smooth;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     font-family: "Maax Mono";
     background-color: $secondary;

@@ -34,7 +34,7 @@ export class IngredientsComponent {
   }
 
   addIngredient(value: string): void {
-    this.ingredients.push(value);
+    this.ingredients.unshift(value);
   }
 
   generateRecipeIdeas() {

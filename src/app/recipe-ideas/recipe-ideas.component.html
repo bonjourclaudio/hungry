@@ -1,3 +1,6 @@
+<div class="title">
+    <h2>possible recipes:</h2>
+</div>
 <div *ngIf="recipes.length >= 1; else noRecipe" class="recipe-grid-container">
     <div class="recipe-grid">
         <div *ngFor="let recipe of recipes" class="recipe-grid__elem" (click)="openRecipe(recipe.name)">

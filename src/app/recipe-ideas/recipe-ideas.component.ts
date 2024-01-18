@@ -24,4 +24,8 @@ export class RecipeIdeasComponent {
     return this.recipeMatcher.checkRecipes(ingredients)
   }
 
+  openRecipe(recipeName: string): void {
+    this.router.navigate(['/recipe', recipeName]);
+  }
+
 }

@@ -2,9 +2,12 @@
     "recipes": [
         {
             "name": "Bruschetta",
+            "img": "../../assets/recipes/bruschetta/img.jpeg",
             "ingredients": [
                 {
                     "name": "tomato",
+                    "unit": "grams",
+                    "amount": 200,
                     "required": true,
                     "aliases": [
                         "tomato",
@@ -15,6 +18,8 @@
                 },
                 {
                     "name": "bread",
+                    "unit": "slices",
+                    "amount": 2,
                     "required": true,
                     "aliases": [
                         "loaf",
@@ -24,37 +29,47 @@
                 },
                 {
                     "name": "salt",
+                    "unit": "to taste",
+                    "amount": null,
                     "required": false
                 },
                 {
                     "name": "pepper",
+                    "unit": "to taste",
+                    "amount": null,
                     "required": false
                 },
                 {
                     "name": "olive oil",
+                    "unit": "tbsp",
+                    "amount": 3,
                     "required": false
                 }
-            ]
-        },
-        {
-            "name": "Gift",
-            "ingredients": [
+            ],
+            "steps": [
                 {
-                    "name": "tomato",
-                    "required": true,
-                    "aliases": [
-                        "tomato",
-                        "cherry tomatoes",
-                        "bush tomato",
-                        "plum tomato"
-                    ]
+                    "number": 1,
+                    "description": "Dice tomatoes into small cubes"
                 },
                 {
-                    "name": "flower",
-                    "required": true,
-                    "aliases": [
-                        "flower"
-                    ]
+                    "number": 2,
+                    "description": "Finely mince garlic"
+                },
+                {
+                    "number": 3,
+                    "description": "Slice bread into slices"
+                },
+                {
+                    "number": 4,
+                    "description": "Heat skillet on medium-high. Fry bread with olive oil until golden brown."
+                },
+                {
+                    "number": 5,
+                    "description": "Add olive oil, salt, pepper and garlic to tomatos."
+                },
+                {
+                    "number": 6,
+                    "description": "Put tomato mixture onto bread. Serve!"
                 }
             ]
         }

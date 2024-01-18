@@ -1,0 +1,40 @@
+<div *ngIf="recipe; else noRecipe" class="recipe-container">
+    <div class="recipe-img">
+        <img [src]="recipe.img" alt="">
+    </div>
+    <div class="recipe-title">
+        <h1>{{recipe.name}}</h1>
+    </div>
+    <div class="recipe-ingredients">
+        <div class="recipe-ingredients__list">
+            <div class="recipe-ingredients__list__elem" *ngFor="let ingredient of recipe.ingredients">
+
+                <div class="ingredient-container">
+                    <div class="unit">
+                        {{ ingredient.amount }} {{ ingredient.unit }}
+                    </div>
+                    <div class="name">
+                        {{ ingredient.name }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="recipe-steps">
+        <div class="recipe-steps__list">
+            <div class="recipe-steps__list__elem" *ngFor="let step of recipe.steps">
+                <div class="step-title">
+                    <h2>step #{{step.number}}</h2>
+                </div>
+                <div class="step-content">
+                    <p>{{ step.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #noRecipe>
+    Recipe not found
+</ng-template>

@@ -1,9 +1,9 @@
-<div *ngIf="recipes.length >= 1; else noRecipe">
-    <ul>
-        <li *ngFor="let recipe of recipes">
-            {{ recipe.name }}
-        </li>
-    </ul>
+<div *ngIf="recipes.length >= 1; else noRecipe" class="recipe-grid-container">
+    <div class="recipe-grid">
+        <div *ngFor="let recipe of recipes" class="recipe-grid__elem" (click)="openRecipe(recipe.name)">
+            <img [src]="recipe.img" [alt]="recipe.name">
+        </div>
+    </div>
 </div>
 
 <ng-template #noRecipe>

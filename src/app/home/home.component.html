@@ -1,6 +1,15 @@
 <div class="home-container">
     <div class="home-container__content">
-        <h1>Welcome to Hungry!</h1>
+        <div class="title">
+            <h2>browse all recipes:</h2>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-grid">
+                <div *ngFor="let recipe of allRecipes" class="recipe-elem" (click)="openRecipe(recipe.name)">
+                    <img [src]="recipe.img" [alt]="recipe.name">
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

@@ -8,13 +8,22 @@ export interface Recipes {
 
 export interface Recipe {
   name: string
+  img: string
   ingredients: Ingredient[]
+  steps: Steps[]
 }
 
 export interface Ingredient {
   name: string
+  unit: string
+  amount: number | null
   required: boolean
   aliases?: string[]
+}
+
+export interface Steps {
+  number: number
+  description: string
 }
 
 
@@ -46,5 +55,17 @@ export class RecipeMatcherService {
   labelsContainIngredient(detectedLabels: string[], ingredient: any): boolean {
     const aliases = ingredient.aliases || [];
     return aliases.some((alias: any) => detectedLabels.includes(alias.toLowerCase()));
+  }
+
+  getAllRecipes(): Recipe[] {
+    return this.cookbook.recipes;
+  }
+
+  getRecipeByName(recipeName: string): Recipe | undefined {
+    let recipe: Recipe | undefined;
+
+    recipe = this.cookbook.recipes.find(val => val.name == recipeName);
+
+    return recipe;
   }
 }

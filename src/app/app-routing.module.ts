@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { CaptureComponent } from './capture/capture.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { RecipeIdeasComponent } from './recipe-ideas/recipe-ideas.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: "recipe-ideas",
     component: RecipeIdeasComponent
+  },
+  {
+    path: "recipe/:name",
+    component: RecipeComponent
   },
   {
     path: "**",

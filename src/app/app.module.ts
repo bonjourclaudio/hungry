@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { CaptureComponent } from './capture/capture.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { RecipeIdeasComponent } from './recipe-ideas/recipe-ideas.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { RecipeIdeasComponent } from './recipe-ideas/recipe-ideas.component';
     HomeComponent,
     CaptureComponent,
     IngredientsComponent,
-    RecipeIdeasComponent
+    RecipeIdeasComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,

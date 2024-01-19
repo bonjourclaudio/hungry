@@ -68,4 +68,32 @@ export class RecipeMatcherService {
 
     return recipe;
   }
+
+  matchPossibleIngredients(ingredients: string[]): string[] {
+    let possibleIngredients: string[] = [];
+
+    let ingredientsOfRecipe: Ingredient[] = [];
+
+    this.cookbook.recipes.forEach(recipe => {
+      recipe.ingredients.forEach(ingredient => {
+        ingredientsOfRecipe.push(ingredient);
+      });
+    });
+
+    ingredients.forEach(matchedIngredientName => {
+      ingredientsOfRecipe.forEach(possibleIngredient => {
+        if (possibleIngredient.aliases?.includes(matchedIngredientName)) {
+          console.log("eriguheiugfe", matchedIngredientName);
+
+          if (!possibleIngredients.includes(possibleIngredient.name)) {
+            possibleIngredients.push(possibleIngredient.name);
+          }
+
+        }
+      })
+
+    });
+
+    return possibleIngredients;
+  }
 }

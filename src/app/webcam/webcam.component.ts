@@ -45,9 +45,11 @@ export class WebcamComponent implements OnInit {
     this.imageDetectionService.detectLabels(this.sysImage).subscribe(
       (response) => {
 
+        let ingredients = this.recipeMatcher.matchPossibleIngredients(response);
+
         const state: NavigationExtras = {
           state: {
-            ingredients: response
+            ingredients: ingredients
           }
         };
 

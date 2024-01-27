@@ -28,6 +28,16 @@
                     ]
                 },
                 {
+                    "name": "garlic (optional)",
+                    "unit": "cloves",
+                    "amount": 1,
+                    "required": false,
+                    "aliases": [
+                        "garlic",
+                        "garlic cloves"
+                    ]
+                },
+                {
                     "name": "salt",
                     "unit": "to taste",
                     "amount": null,
@@ -98,10 +108,13 @@
                     ]
                 },
                 {
-                    "name": "chives",
+                    "name": "chives (optional)",
                     "unit": "tbsp",
                     "amount": 1,
-                    "required": false
+                    "required": false,
+                    "aliases": [
+                        "chives"
+                    ]
                 },
                 {
                     "name": "salt",

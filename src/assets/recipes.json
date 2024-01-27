@@ -72,6 +72,84 @@
                     "description": "Put tomato mixture onto bread. Serve!"
                 }
             ]
+        },
+        {
+            "name": "Scrambled Egg",
+            "img": "../../assets/recipes/scrambled-egg/img.jpg",
+            "ingredients": [
+                {
+                    "name": "egg",
+                    "unit": "pieces",
+                    "amount": 2,
+                    "required": true,
+                    "aliases": [
+                        "egg",
+                        "eggs",
+                        "chicken egg"
+                    ]
+                },
+                {
+                    "name": "butter",
+                    "unit": "tbsp",
+                    "amount": 2,
+                    "required": false,
+                    "aliases": [
+                        "butter"
+                    ]
+                },
+                {
+                    "name": "chives",
+                    "unit": "tbsp",
+                    "amount": 1,
+                    "required": false
+                },
+                {
+                    "name": "salt",
+                    "unit": "to taste",
+                    "amount": null,
+                    "required": false
+                },
+                {
+                    "name": "pepper",
+                    "unit": "to taste",
+                    "amount": null,
+                    "required": false
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Crack eggs into bowl and squirl with a fork until well combined. Season to taste"
+                },
+                {
+                    "number": 2,
+                    "description": "Finely slice chives"
+                },
+                {
+                    "number": 3,
+                    "description": "Heat up skillet on medium heat"
+                },
+                {
+                    "number": 4,
+                    "description": "Add butter. Once melted, pour in egg mixture"
+                },
+                {
+                    "number": 5,
+                    "description": "Constantly move the eggs in the pan using a spatula"
+                },
+                {
+                    "number": 6,
+                    "description": "Once almost cooked, turn off heat and fold the eggs"
+                },
+                {
+                    "number": 7,
+                    "description": "Adjust salt and pepper if needed"
+                },
+                {
+                    "number": 8,
+                    "description": "Put on a plate and serve with chives"
+                }
+            ]
         }
     ]
 }

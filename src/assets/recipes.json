@@ -163,6 +163,106 @@
                     "description": "Put on a plate and serve with chives"
                 }
             ]
+        },
+        {
+            "name": "Shakshuka",
+            "img": "../../assets/recipes/shakshuka/img.jpg",
+            "ingredients": [
+                {
+                    "name": "tomato",
+                    "unit": "grams",
+                    "amount": 300,
+                    "required": true,
+                    "aliases": [
+                        "tomato",
+                        "cherry tomatoes",
+                        "bush tomato",
+                        "plum tomato"
+                    ]
+                },
+                {
+                    "name": "bell pepper",
+                    "unit": "grams",
+                    "amount": 200,
+                    "required": true,
+                    "aliases": [
+                        "pepper",
+                        "bell pepper"
+                    ]
+                },
+                {
+                    "name": "egg",
+                    "unit": "pieces",
+                    "amount": 3,
+                    "required": true,
+                    "aliases": [
+                        "egg",
+                        "eggs",
+                        "chicken egg"
+                    ]
+                },
+                {
+                    "name": "garlic",
+                    "unit": "cloves",
+                    "amount": 4,
+                    "required": false
+                },
+                {
+                    "name": "parsley (optional)",
+                    "unit": "tbsp",
+                    "amount": 1,
+                    "required": false,
+                    "aliases": [
+                        "parsley"
+                    ]
+                },
+                {
+                    "name": "salt",
+                    "unit": "to taste",
+                    "amount": null,
+                    "required": false
+                },
+                {
+                    "name": "pepper",
+                    "unit": "to taste",
+                    "amount": null,
+                    "required": false
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Roughly chop tomatoes and bell peppers into cubes."
+                },
+                {
+                    "number": 2,
+                    "description": "Finely mince garlic and parsley."
+                },
+                {
+                    "number": 3,
+                    "description": "Heat up skillet on medium heat"
+                },
+                {
+                    "number": 4,
+                    "description": "Add olive oil. Fry garlic until almost brown."
+                },
+                {
+                    "number": 5,
+                    "description": "Add veggies and fry on high until soft. Season with salt and pepper."
+                },
+                {
+                    "number": 6,
+                    "description": "Add water and cover with a lid. Cook until very soft."
+                },
+                {
+                    "number": 7,
+                    "description": "Once the veggies are cooked - remove the lid and crack eggs into the pan. Cover with lid until the eggs are cooked."
+                },
+                {
+                    "number": 8,
+                    "description": "Serve with parsley and some more black pepper."
+                }
+            ]
         }
     ]
 }

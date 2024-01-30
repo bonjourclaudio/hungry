@@ -263,6 +263,90 @@
                     "description": "Serve with parsley and some more black pepper."
                 }
             ]
+        },
+        {
+            "name": "Overnight Oats",
+            "img": "../../assets/recipes/oats/img.jpg",
+            "ingredients": [
+                {
+                    "name": "banana",
+                    "unit": "piece",
+                    "amount": 1,
+                    "required": true,
+                    "aliases": [
+                        "banana"
+                    ]
+                },
+                {
+                    "name": "oats",
+                    "unit": "grams",
+                    "amount": 100,
+                    "required": true,
+                    "aliases": [
+                        "oats",
+                        "rolled oats"
+                    ]
+                },
+                {
+                    "name": "milk",
+                    "unit": "grams",
+                    "amount": 200,
+                    "required": true,
+                    "aliases": [
+                        "milk",
+                        "cows milk",
+                        "oat milk",
+                        "alternative milk",
+                        "almond milk"
+                    ]
+                },
+                {
+                    "name": "vanilla",
+                    "unit": "tbsp",
+                    "amount": 1,
+                    "required": false
+                },
+                {
+                    "name": "cinnamon",
+                    "unit": "tbsp",
+                    "amount": 2,
+                    "required": false
+                },
+                {
+                    "name": "salt",
+                    "unit": "pinch",
+                    "amount": 1,
+                    "required": false
+                },
+                {
+                    "name": "honey",
+                    "unit": "tbsp",
+                    "amount": 2,
+                    "required": false
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Mash banana with a fork"
+                },
+                {
+                    "number": 2,
+                    "description": "Add everything but the oats and stir to combine well"
+                },
+                {
+                    "number": 3,
+                    "description": "Add oats and mix in"
+                },
+                {
+                    "number": 4,
+                    "description": "Put in a glass jar and store in fridge overnight"
+                },
+                {
+                    "number": 5,
+                    "description": "After chilled overnight, top with fruits of your likings and enjoy"
+                }
+            ]
         }
     ]
 }
